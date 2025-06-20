@@ -5,12 +5,19 @@
 
 Docker ビルド
 1.git clone gitgit@github.com:Tomo-Taka6387/product-form.git
+
 2.DockerDesktop アプリを立ち上げる
+
 3.docker-compose up -b --build
 
 Laravel 環境構築
+
 1.docker-compose exec php bash
-2.composer install 3.「env.example」ファイルを 「.env」ファイルに命名を変更。または、新しく.env ファイルを作成
+
+2.composer install
+
+3.「env.example」ファイルを .env」ファイルに命名を変更。または、新しく.env ファイルを作成
+
 4..env に以下の環境変数を追加
 DB_CONNECTION=mysql
 DB_HOST=mysql
@@ -36,6 +43,11 @@ php artisan db:seed
 ＃ER 図
 ![ER図](./er.png)
 
+
+
+
+
 ＃URL
+
 *環境開発:http://localhost/products
 *phpMyAdmin: http://localhost:8080/
